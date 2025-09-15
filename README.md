@@ -1,16 +1,22 @@
-```txt
-npm install
-npm run dev
+# CF Tracker
+A simple BitTorrent tracker on Cloudflare Workers.
+
+## How to run
+```bash
+pnpm install
+pnpm run dev
 ```
 
-```txt
-npm run deploy
+## Deployment
+```bash
+pnpm run deploy
 ```
 
+## TypeScript types for Cloudflare Workers bindings
 [For generating/synchronizing types based on your Worker configuration run](https://developers.cloudflare.com/workers/wrangler/commands/#types):
 
-```txt
-npm run cf-typegen
+```bash
+pnpm run cf-typegen
 ```
 
 Pass the `CloudflareBindings` as generics when instantiation `Hono`:
